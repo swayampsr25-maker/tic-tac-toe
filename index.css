@@ -1,0 +1,152 @@
+body {
+  height: 100vh;
+  background-image: url("https://img.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9722.jpg?size=626&ext=jpg&ga=GA1.1.2037429129.1721313799&semt=ais_user");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+.container {margin: -20px 10px;
+  padding: 10px;
+}
+
+#choice {
+  display: none;
+  color: aliceblue;
+  text-align: center;
+  font-family: cursive;
+}
+#notc {
+  color: rgb(233, 108, 108);
+  font-family: cursive;
+}
+#Game {
+  display: none;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  padding: 30px;
+  border: 1px solid rgb(0, 229, 255);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgb(36, 186, 186)
+}
+#inside {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+}
+h1 {
+  text-align: center;
+}
+#head {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: azure;
+  text-decoration: underline dashed rgb(121, 121, 251);
+}
+
+#intro {
+  text-align: center;
+  color: aliceblue;
+  height: 120px;
+}
+.layout {
+  display: grid;
+  grid-template-columns: 85px 85px 85px;
+  gap: 5px 7px;
+}
+.box {
+  color: aliceblue;
+  height: 80px;
+  width: 85px;
+  border: 2px solid rgb(5, 249, 168);
+  background-color: rgb(36, 36, 34);
+  border-radius: 3px;
+  font-size: 57px;
+  text-align: center;
+  font-family: cursive;
+}
+.opt {
+  color: aliceblue;
+  margin-top: 10px;
+  text-align: center;
+  background-color: rgba(50, 46, 46, 0.99);
+  height: 40px;
+  width: 83.2px;
+  border-radius: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-shadow: 2px 1px 1px 1px rgb(100, 145, 139);
+
+}
+#opt {
+  text-align: center;
+}
+.rns {text-align: center;
+  color: aliceblue;
+  height: 260px;
+  width: 270px;
+  background-color: rgba(255, 154, 129, 0.104);
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #bcfffd;
+}
+#res {
+  display: grid;
+  margin-top: -10px;
+
+}
+.Re {
+  height: 30px;
+  font-size: 1.5em;
+  margin: 0px 10px;
+  padding: 5px;
+  text-align: center;
+  display: inline;
+  background-color: black;
+  color: rgb(72, 207, 72);
+  border: 1px solid rgb(79, 74, 65);
+}
+#scoreboard{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -10px;
+}
+.src {
+  text-align: center;
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px;
+  background-color: rgba(24, 67, 67, 0.912);
+  box-shadow: 1px 1px 5px 1px rgb(119, 212, 168);
+  width: 100px;
+}
+.grid {
+  display: grid;
+}
+
+.opt:hover {
+  background-color: rgb(73, 72, 70);
+}
+.opt:active {
+  box-shadow: none;
+}
+.win-animation {
+  animation: winAnimation 1s infinite;
+}
+@keyframes winAnimation {
+  0% { background-color: rgb(36, 36, 34); }
+  25%{background-color: #2b2a13;}
+  50% { background-color: #495e26; }
+  75%{background-color: #2b2a13;}
+  100%{background-color: rgb(36, 36, 34);}
+}
+@media only screen and (max-width: 610px) {
+  #inside {
+  display: grid;
+  grid-template-columns: auto ;
+  gap: 10px;
+  }
+  .box,#choice,#notc{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .box{
+  font-size: 65px;
+  }
+}
